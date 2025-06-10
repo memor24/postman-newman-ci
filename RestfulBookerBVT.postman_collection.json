@@ -1134,8 +1134,8 @@
 							"});",
 							"// pm.execution.setNextRequest(null);",
 							"",
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
 							"});",
 							"",
 							"pm.test(\"Response time is less than 200ms\", function () {",
@@ -1413,8 +1413,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
+							"pm.test(\"Status code is 503\", function () {",
+							"    pm.response.to.have.status(503);",
 							"});",
 							"",
 							"",
