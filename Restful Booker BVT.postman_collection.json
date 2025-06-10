@@ -4,7 +4,7 @@
 		"name": "Restful Booker BVT",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44674029",
-		"_collection_link": "https://m-2336905.postman.co/workspace/17b947cc-b01c-4ac2-8f1f-c8206f19b574/collection/44674029-25c9c2f0-cc72-467a-b5b2-c9195b89ef9e?action=share&source=collection_link&creator=44674029"
+		"_collection_link": "https://m-2336905.postman.co/workspace/M's-Workspace~17b947cc-b01c-4ac2-8f1f-c8206f19b574/collection/44674029-25c9c2f0-cc72-467a-b5b2-c9195b89ef9e?action=share&source=collection_link&creator=44674029"
 	},
 	"item": [
 		{
@@ -1132,16 +1132,25 @@
 							"pm.test(\"Ping is successful\", function () {",
 							"    pm.response.to.be.success;",
 							"});",
+							"// pm.execution.setNextRequest(null);",
 							"",
-							"pm.execution.setNextRequest(null);",
-							"",
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
 							"});",
 							"",
 							"pm.test(\"Response time is less than 200ms\", function () {",
 							"    pm.expect(pm.response.responseTime).to.be.below(200);",
 							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
