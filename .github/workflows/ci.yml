@@ -11,3 +11,4 @@ jobs:
         uses: actions/checkout@v2 
       - name: "run api tests" 
         run: newman run RestfulBookerBVT.postman_collection.json -e Production.postman_environment.json
+# test pr2
